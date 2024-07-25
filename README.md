@@ -27,7 +27,7 @@
 
 </div>
 
-Welcome to PyCIL, perhaps the toolbox for class-incremental learning with the **most** implemented methods. This is the code repository for "PyCIL: A Python Toolbox for Class-Incremental Learning" [[paper]](https://arxiv.org/abs/2112.12533) in PyTorch. If you use any content of this repo for your work, please cite the following bib entry:
+Welcome to PyCIL, perhaps the toolbox for class-incremental learning with the **most** implemented methods. This is the code repository for "PyCIL: A Python Toolbox for Class-Incremental Learning" [[paper]](https://arxiv.org/abs/2112.12533) in PyTorch. If you use any content of this repo for your work, please cite the following bib entries:
 
     @article{zhou2023pycil,
         author = {Da-Wei Zhou and Fu-Yun Wang and Han-Jia Ye and De-Chuan Zhan},
@@ -36,39 +36,40 @@ Welcome to PyCIL, perhaps the toolbox for class-incremental learning with the **
         year = {2023},
         volume = {66},
         number = {9},
-        pages = {197101-},
+        pages = {197101},
         doi = {https://doi.org/10.1007/s11432-022-3600-y}
       }
     
     @article{zhou2023class,
         author = {Zhou, Da-Wei and Wang, Qi-Wei and Qi, Zhi-Hong and Ye, Han-Jia and Zhan, De-Chuan and Liu, Ziwei},
-        title = {Deep Class-Incremental Learning: A Survey},
-        journal = {arXiv preprint arXiv:2302.03648},
-        year = {2023}
+        title = {Class-Incremental Learning: A Survey},
+        journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+        year = {2024}
      }
 
-    @article{zhou2024continual,
-      title={Continual Learning with Pre-Trained Models: A Survey},
-      author={Zhou, Da-Wei and Sun, Hai-Long and Ning, Jingyi and Ye, Han-Jia and Zhan, De-Chuan},
-      journal={arXiv preprint arXiv:2401.16386},
-      year={2024}
+    @inproceedings{zhou2024continual,
+        title={Continual learning with pre-trained models: A survey},
+        author={Zhou, Da-Wei and Sun, Hai-Long and Ning, Jingyi and Ye, Han-Jia and Zhan, De-Chuan},
+        booktitle={IJCAI},
+        year={2024}
     }
 
 
 ## What's New
+- [2024-07]🌟 Check out our [rigorous and unified survey](https://arxiv.org/abs/2302.03648) about class-incremental learning, which introduces some memory-agnostic measures with holistic evaluations from multiple aspects (**TPAMI 2024**)!
+- [2024-06]🌟 Check out our [work about all-layer margin in class-incremental learning](https://openreview.net/forum?id=aksdU1KOpT) (**ICML 2024**)!
 - [2024-05]🌟 Add analytic continual learning methods, including [ACIL](https://proceedings.neurips.cc/paper_files/paper/2022/hash/4b74a42fc81fc7ee252f6bcb6e26c8be-Abstract-Conference.html) (**NeurIPS 2022**) and [DS-AL](https://ojs.aaai.org/index.php/AAAI/article/view/29670) (**AAAI 2024**).
 - [2024-03]🌟 Check out our [latest work](https://arxiv.org/abs/2403.12030) on pre-trained model-based class-incremental learning (**CVPR 2024**)!
 - [2024-01]🌟 Check out our [latest survey](https://arxiv.org/abs/2401.16386) on pre-trained model-based continual learning (**IJCAI 2024**)!
 - [2023-09]🌟 We have released [PILOT](https://github.com/sun-hailong/LAMDA-PILOT) toolbox for class-incremental learning with pre-trained models. Have a try!
 - [2023-07]🌟 Add [MEMO](https://openreview.net/forum?id=S07feAlQHgM), [BEEF](https://openreview.net/forum?id=iP77_axu0h3), and [SimpleCIL](https://arxiv.org/abs/2303.07338). State-of-the-art methods of 2023!
 - [2023-05]🌟 Check out our recent work about [class-incremental learning with vision-language models](https://arxiv.org/abs/2305.19270)!
-- [2023-02]🌟 Check out our [rigorous and unified survey](https://arxiv.org/abs/2302.03648) about class-incremental learning, which introduces some memory-agnostic measures with holistic evaluations from multiple aspects!
 - [2022-12]🌟 Add FrTrIL, PASS, IL2A, and SSRE.
 - [2022-10]🌟 PyCIL has been published in [SCIENCE CHINA Information Sciences](https://link.springer.com/article/10.1007/s11432-022-3600-y). Check out the [official introduction](https://mp.weixin.qq.com/s/h1qu2LpdvjeHAPLOnG478A)!  
 - [2022-08]🌟 Add RMM.
 - [2022-07]🌟 Add [FOSTER](https://arxiv.org/abs/2204.04662). State-of-the-art method with a single backbone!
 - [2021-12]🌟 **Call For Feedback**: We add a <a href="#Awesome-Papers-using-PyCIL">section</a> to introduce awesome works using PyCIL. If you are using PyCIL to publish your work in  top-tier conferences/journals, feel free to [contact us](mailto:zhoudw@lamda.nju.edu.cn) for details!
-- [2021-12]🌟 As team members are committed to other projects and in light of the intense demands of code reviews, **we will prioritize reviewing algorithms that have explicitly cited and implemented methods from our toolbox paper in their publications.** Mentioning this can expedite the review process. We greatly appreciate your patience throughout this period.
+- [2021-12]🌟 As team members are committed to other projects and in light of the intense demands of code reviews, **we will prioritize reviewing algorithms that have explicitly cited and implemented methods from our toolbox paper in their publications.** Please read the [PR policy](resources/PR_policy.md) before submitting your code.
 
 ## Introduction
 
@@ -189,11 +190,14 @@ We have implemented the pre-processing of `CIFAR100`, `imagenet100,` and `imagen
 ## Awesome Papers using PyCIL
 
 ### Our Papers
+
+- Class-Incremental Learning: A Survey (**TPAMI 2024**) [[paper](https://arxiv.org/abs/2302.03648)] [[code](https://github.com/zhoudw-zdw/CIL_Survey/)]
+  
 - Expandable Subspace Ensemble for Pre-Trained Model-Based Class-Incremental Learning (**CVPR 2024**) [[paper](https://arxiv.org/abs/2403.12030 )] [[code](https://github.com/sun-hailong/CVPR24-Ease)]
 
-- Continual Learning with Pre-Trained Models: A Survey (**IJCAI 2024**) [[paper](https://arxiv.org/abs/2401.16386)] [[code](https://github.com/sun-hailong/LAMDA-PILOT)]
+- Multi-layer Rehearsal Feature Augmentation for Class-Incremental Learning (**ICML 2024**) [[paper](https://openreview.net/forum?id=aksdU1KOpT)] [[code](https://github.com/bwnzheng/MRFA_ICML2024)]
 
-- Deep Class-Incremental Learning: A Survey (**arXiv 2023**) [[paper](https://arxiv.org/abs/2302.03648)] [[code](https://github.com/zhoudw-zdw/CIL_Survey/)]
+- Continual Learning with Pre-Trained Models: A Survey (**IJCAI 2024**) [[paper](https://arxiv.org/abs/2401.16386)] [[code](https://github.com/sun-hailong/LAMDA-PILOT)]
 
 - Learning without Forgetting for Vision-Language Models (**arXiv 2023**) [[paper](https://arxiv.org/abs/2305.19270)]
 
